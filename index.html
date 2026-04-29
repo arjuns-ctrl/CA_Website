@@ -1,101 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saravana & Co | Chartered Accountants</title>
-<link rel="stylesheet" href="styles.css">
-<script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saravana & Co is a chartered accountant firm offering audits, taxation, litigation, compliance, and accounting services.">
+  <title>Saravana &amp; Co | Chartered Accountants</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
-
 <body>
+  <header>
+    <div class="container nav">
+      <h1>Saravana &amp; Co</h1>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <div class="container nav">
-    <h1>Saravana & Co</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#why">Why Us</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>25+ Years of Trust. Precision. Results.</h2>
+        <p>Helping businesses and individuals stay compliant, confident, and ahead.</p>
+        <div class="cta-buttons">
+          <button type="button" onclick="openPopup()">Get Consultation</button>
+          <a href="#services" class="secondary">Explore Services</a>
+        </div>
+      </div>
+    </section>
 
-<section class="hero">
-  <div class="container">
-    <h2>25+ Years of Trust. Precision. Results.</h2>
-    <p>Helping businesses and individuals stay compliant, confident, and ahead.</p>
-    <div class="cta-buttons">
-      <button onclick="openPopup()">Get Consultation</button>
-      <a href="#services" class="secondary">Explore Services</a>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Who We Are</h2>
+        <p>With over 25 years of experience, Saravana &amp; Co delivers expert taxation, audit, and compliance services with a client-first approach.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section light">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="grid">
+          <article class="card"><h3>Bank Audits</h3><p>Deep expertise with precision.</p></article>
+          <article class="card"><h3>GST &amp; Income Tax</h3><p>End-to-end tax solutions.</p></article>
+          <article class="card"><h3>Litigation</h3><p>Representation you can trust.</p></article>
+          <article class="card"><h3>Compliance</h3><p>Seamless regulatory support.</p></article>
+          <article class="card"><h3>Accounting</h3><p>Strong books, strong business.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+        <div class="grid">
+          <div class="card">25+ Years Expertise</div>
+          <div class="card">Litigation Strength</div>
+          <div class="card">End-to-End Solutions</div>
+          <div class="card">Personal Attention</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial section light">
+      <div class="container">
+        <h2>Client Trust</h2>
+        <p>“Professional, reliable, and always available when needed.”</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Let’s Work Together</h2>
+        <p>Reliable advice. Practical solutions. Long-term trust.</p>
+        <button type="button" onclick="openPopup()">Contact Us</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="popup" class="popup" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="consultation-title">
+    <div class="popup-content">
+      <button type="button" onclick="closePopup()" class="close" aria-label="Close consultation form">&times;</button>
+      <h3 id="consultation-title">Get Consultation</h3>
+      <form id="consultation-form" novalidate>
+        <label for="name" class="sr-only">Your Name</label>
+        <input id="name" name="name" type="text" placeholder="Your Name" required>
+
+        <label for="email" class="sr-only">Your Email</label>
+        <input id="email" name="email" type="email" placeholder="Your Email" required>
+
+        <label for="requirement" class="sr-only">Your Requirement</label>
+        <textarea id="requirement" name="requirement" placeholder="Your Requirement" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="form-message" class="form-message" aria-live="polite"></p>
     </div>
   </div>
-</section>
 
-<section id="about" class="section">
-  <div class="container">
-    <h2>Who We Are</h2>
-    <p>With over 25 years of experience, Saravana & Co delivers expert taxation, audit, and compliance services with a client-first approach.</p>
-  </div>
-</section>
+  <a class="whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">WhatsApp</a>
 
-<section id="services" class="section light">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card"><h3>Bank Audits</h3><p>Deep expertise with precision.</p></div>
-      <div class="card"><h3>GST & Income Tax</h3><p>End-to-end tax solutions.</p></div>
-      <div class="card"><h3>Litigation</h3><p>Representation you can trust.</p></div>
-      <div class="card"><h3>Compliance</h3><p>Seamless regulatory support.</p></div>
-      <div class="card"><h3>Accounting</h3><p>Strong books, strong business.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="why" class="section">
-  <div class="container">
-    <h2>Why Choose Us</h2>
-    <div class="grid">
-      <div class="card">25+ Years Expertise</div>
-      <div class="card">Litigation Strength</div>
-      <div class="card">End-to-End Solutions</div>
-      <div class="card">Personal Attention</div>
-    </div>
-  </div>
-</section>
-
-<section class="testimonial section light">
-  <div class="container">
-    <h2>Client Trust</h2>
-    <p>“Professional, reliable, and always available when needed.”</p>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Let’s Work Together</h2>
-    <p>Reliable advice. Practical solutions. Long-term trust.</p>
-    <button onclick="openPopup()">Contact Us</button>
-  </div>
-</section>
-
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <span onclick="closePopup()" class="close">&times;</span>
-    <h3>Get Consultation</h3>
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <textarea placeholder="Your Requirement"></textarea>
-    <button>Submit</button>
-  </div>
-</div>
-
-<a class="whatsapp" href="#">WhatsApp</a>
-
-<footer>
-  <p>© 2026 Saravana & Co. All Rights Reserved.</p>
-</footer>
-
+  <footer>
+    <p>© 2026 Saravana &amp; Co. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
